@@ -10,7 +10,9 @@
 	if (isset($_POST['connexion'])) {
 		$username = $_POST['username'];
 		$password = $_POST['password'];
-		$rememberMe = $_POST['rememberMe'];
+		if (isset($_POST['rememberMe'])) {
+			$rememberMe = $_POST['rememberMe'];
+		}
 		
 		$erreurs = [];
 		
