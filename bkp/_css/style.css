@@ -1,0 +1,520 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family: 'Roboto', Arial, sans-serif;
+	background-color: #eee;
+}
+
+.clearBoth{
+	clear:both;
+}
+
+a:link, a:visited{
+	text-decoration:none;
+	color:#000;
+}
+
+.btn {
+	color: #fff;
+    padding: 5px 10px;
+    background: #666;
+    border: none;
+    border-radius: 5px;
+	cursor: pointer;
+}
+
+.field input, .textarea textarea, .field select, .field date {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 16px;
+}
+
+.actionsClient {
+	margin-top: 35px;
+    float: left;
+	clear: left;
+}
+
+.actionsClient form + form {
+	margin-top: 5px;
+}
+
+.container{
+	width:90%;
+	max-width:1040px;
+	/* min-width:580px; */
+	margin:0 auto;
+	background:#fff;
+	overflow:hidden;
+	padding: 20px;
+    box-sizing: border-box;
+}
+
+header{
+	overflow:hidden;
+	margin-bottom:20px;
+}
+
+nav{
+	margin: 0 auto;
+    text-align: center;
+    width: 97%;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+}
+
+nav li{
+	display: inline-block;
+}
+
+nav li +li {
+    margin-left: 5px;
+    padding-left: 5px;
+    border-left: 1px solid #ccc;
+}
+
+nav li a {
+	display: block;
+    padding: 7px 5px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+nav li a:hover, nav li a:active, nav li a.active {
+	color:#999;
+}
+
+nav li a.active {
+	font-weight: 500;
+}
+
+footer {
+	margin: 0 auto;
+    text-align: center;
+    width: 97%;
+    font-size: 12px;
+    border-top: 1px solid #ccc;
+	margin-top: 35px;
+	float: left;
+}
+
+footer li{
+	display: inline-block;
+}
+
+footer li +li {
+    margin-left: 5px;
+    padding-left: 5px;
+    border-left: 1px solid #ccc;
+}
+
+footer li a {
+	display: block;
+    padding: 7px 5px;
+    color: #333;
+	margin-top: 5px;
+}
+
+footer li a:hover, footer li a:active {
+	color:#999;
+}
+
+.content{
+	margin-top:25px;
+}
+
+.content h1{
+	font-weight:bold;
+	font-size:1.5em;
+	margin-bottom:20px;
+	text-align:center;
+}
+
+.content .listeClients{
+	width: 100%;
+    margin: 15px 0;
+    float: left;
+}
+
+.legende{
+	margin-bottom:10px;
+}
+
+.content .listeClients th{
+	font-weight:bold;
+	border-bottom:1px solid #000;
+}
+
+.content .listeClients td a:link, .content .listeClients td a:visited{
+	text-decoration:underline;
+}
+
+.content .listeClients td a:hover, .content .listeClients td a:active{
+	color:#333;
+}
+
+.content .listeClients td{
+	padding-top:5px;
+}
+
+.content p{
+	text-align:center;
+}
+
+.field {
+    width: 33.33%;
+    margin: 0 0 15px 0;
+    padding-right: 15px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.field label .requiredField {
+    color: #DC0000;
+	margin-left: 2px;
+}
+
+.field.text input, .field.date input, .field select {
+    width: 100%;
+    height: 38px;
+    line-height: 18px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.field.submit {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	float: left;
+}
+
+.field.submit input {
+	display: inline-block;
+}
+
+.field.checkbox label {
+	display: inline;
+}
+
+.field.checkbox input {
+	margin-left: 10px;
+	position: relative;
+	top: 2px;
+}
+
+.creerClient p, .creerContrat p{
+	text-align:left;
+}
+
+.creerContrat fieldset, .modifContrat fieldset {
+	width: 100%;
+	float: left;
+}
+
+.creerContrat fieldset+fieldset, .modifContrat fieldset+fieldset {
+	margin-top:15px;
+	padding-top: 35px;
+	border-top: 1px solid #ccc;
+}
+
+.creerContrat .field, .modifClient .field, .creerClient .field, .connexionForm .field {
+	position: relative;
+	padding-bottom: 15px;
+}
+
+.content li a{
+	text-decoration:underline;
+}
+
+.erreur{
+	font-size:0.7em;
+	color:#C33;
+	position: absolute;
+    bottom: 0;
+}
+
+.floatRight{
+	
+	text-align:right;
+}
+
+.floatLeft{
+	float:left;
+}
+
+.detailAbonnement{
+	clear:left;
+	border:1px solid #000;
+	width:45%;
+	text-align:center;
+	margin-bottom:10px;
+	padding: 10px;
+	float:left;
+}
+
+.detailAbonnement li{
+	margin-bottom:15px;
+}
+
+.detailAbonnement li b{
+	font-weight: 500;
+}
+
+.methodePaiement{
+	width:45%;
+	border:1px solid #000;
+	padding: 10px;
+	float:left;
+	clear:left;
+}
+
+.methodePaiement p{
+	text-align:left;
+	margin-bottom:8px;
+}
+
+.methodePaiement table{
+	width:100%;
+}
+
+.methodePaiement table th{
+	font-weight:bold;
+}
+
+.content h3{
+	font-weight:bold;
+	margin-bottom:10px;
+}
+
+h2{
+	text-align:center;
+}
+
+.content div h3{
+	font-size: 18px;
+	text-align:center;
+}
+
+.marginLeft{
+	margin-left:90px;
+}
+
+.conteneurBoutonPaiement{
+	text-align:right;
+	margin-top:10px;
+}
+
+.legende{
+	margin-top:20px;
+	list-style-type:disc;
+	margin-left:10px;
+}
+
+.etat {
+	color: #fbfbfb;
+}
+
+.normal{
+	background-color:#35b283;
+}
+
+.bientot{
+	background-color:#e7903a;
+}
+
+.expire{
+	background-color:#da3825;
+}
+
+.suspendu{
+	background-color:#104657;
+}
+
+.resilie{
+	background-color:#ebd6a6;
+	color: #333;
+}
+
+textarea{
+	display:block;
+	min-width:200px;
+	min-height:100px;
+}
+
+.description, .reglements{
+	width:48%;
+	float:right;
+	border:1px solid #000;
+	padding: 10px;
+	margin-bottom:10px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.description {
+	min-height: 360px;
+}
+
+.description.avecCarteCredit{
+	min-height: 461px;
+}
+
+.description p, .reglements p{
+	text-align: justify;
+}
+
+.description h2, .reglements h2{
+	font-size:1.1em;
+	font-weight:bold;
+}
+
+#listeClients thead th {
+	padding-left: 25px;
+	background-position: left;
+}
+
+.listePaiementsContainer {
+	margin-top: 25px;
+	float: left;
+}
+
+.listePaiementsContainer h4 {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.submitNewPaiement {
+	display: block;
+	clear: both;
+}
+
+.listeModesPaiement {
+	padding-left: 20px;
+}
+
+.listeModesPaiement li {
+	list-style: disc;
+}
+
+.listeModesPaiement li .supprimer {
+	font-size: 14px;
+	float: right;
+}
+
+.textarea {
+	width: 48%;
+	float: left;
+}
+
+.textarea  label {
+	display: block; 
+	margin-bottom: 3px;
+}
+
+.textarea+.textarea {
+	margin-left: 4%;
+}
+
+.textarea textarea {
+	width: 100%;
+	padding:  5px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.changerInfos .textarea textarea {
+	height: 150px;
+	resize: none;
+}
+
+.formConfirmation {
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+	padding-bottom: 10px;
+}
+
+.confirmation {
+	display: block;
+	clear: both;
+}
+
+.readonly  input {
+	background-color: #eee;
+	border: 1px solid #ccc;
+}
+
+.modifClient {
+	width: 100%;
+	float: left;
+}
+
+.modifClient+.modifClient {
+	margin-top: 30px;
+	padding-top: 30px;
+	border-top: 1px solid #ccc;
+}
+
+.modifClient h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.infosMembre {
+	width: 100%;
+	float: left;
+	border-top: 1px solid #ccc;
+	padding-top: 10px;
+	margin-top:10px;
+}
+
+.blocsInfos {
+	width: 100%;
+	float: left;
+	margin-top: 10px;
+}
+
+.connexionForm {
+	margin-top: 15px;
+}
+
+.connexionForm .field {
+	float: none;
+	margin: 0 auto;
+	position: relative;
+	padding-bottom:  15px;
+	padding-right: 0;
+}
+
+.connexionForm .field+.field {
+	margin-top: 15px;
+}
+
+.motPasseOublie {
+	margin-bottom: 15px;
+}
+
+.renvoiCode {
+	margin: 10px 0;
+}
+
+.renvoiCode .input {
+	text-decoration: underline;
+	border: none;
+	background: none;
+}
+
+.changerEmail {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #ccc;
+}
