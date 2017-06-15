@@ -1,11 +1,8 @@
 <?php
 $db_host='localhost';
-$db_database='centr295_gestionnaireContrats';
-//centr295_gestionnaireContrats
-$db_username='centr295_gestion';
-//centr295_gestion 
-$db_password='?p&TOpJX~q{y';
-//?p&TOpJX~q{y
+$db_database='gestionnaireDB';
+$db_username='root';
+$db_password='';
 
 session_start();
 
