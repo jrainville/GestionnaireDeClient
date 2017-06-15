@@ -71,7 +71,7 @@
 			<div class="field text">
 				<label for="username">Nom d'usager</label>
 				<input type="text" id="username"  name="username" <?php 
-				if($username) { 
+				if(isset($username)) { 
 					echo 'value="'.$username.'"'; 
 				} 
 				?>>
@@ -93,7 +93,7 @@
 			<div class="field checkbox">
 				<label for="rememberMe">Se souvenir de moi</label>
 				<input type="checkbox" id="rememberMe" name="rememberMe" <?php 
-				if($rememberMe) { 
+				if(isset($rememberMe)) { 
 					echo 'selected'; 
 				} 
 				?>>

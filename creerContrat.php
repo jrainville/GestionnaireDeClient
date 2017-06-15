@@ -375,7 +375,7 @@
 					<select name="modePaiement_id"><option value="default">Choisir un mode de paiement</option>';
 				foreach($modes as $mode_id => $mode){
 					$affichage.='<option value="'.$mode_id.'"';
-					if ($mode_id == $modePaiement_id) {
+					if (isset($modePaiement_id) && $mode_id == $modePaiement_id) {
 						$affichage .= ' selected';
 					}
 					$affichage .= '>'.$mode.'</option>';
